@@ -22,7 +22,6 @@ bool baselineCollected = false;
 float meanDiff = 0.0;
 float stdDevDiff = 0.0;
 
-const float MIN_FLOW_THRESHOLD = 0.2; // L/min — adjust if needed
 
 
 // Interrupt Functions for Flow Sensors

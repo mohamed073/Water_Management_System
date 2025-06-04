@@ -8,7 +8,7 @@ unsigned long lastTime = 0;
 bool autoMode = true; // Start in automatic mode
 
 void setup() {
-  wdt_enable(WDTO_8S); // enable watch dog timer with 8 minutes
+  wdt_enable(WDTO_8S); // enable watch dog timer with 8 seconds
   
   Serial.begin(9600);  // Use the default Serial for communication with ESP8266
 
@@ -25,10 +25,10 @@ void setup() {
   
   pinMode(ALARM, OUTPUT);
 
-  digitalWrite(PUMP, HIGH);
-  digitalWrite(VALVE_1, HIGH);
-  digitalWrite(VALVE_2, HIGH);
-  digitalWrite(VALVE_3, HIGH);
+  digitalWrite(PUMP, LOW);
+  digitalWrite(VALVE_1, LOW);
+  digitalWrite(VALVE_2, LOW);
+  digitalWrite(VALVE_3, LOW);
   
   digitalWrite(ALARM, LOW);
 
@@ -46,10 +46,10 @@ void processReceivedData(String receivedData) {
     
   if (dataType == "mode") {
     dataValue.trim();
-    if (dataValue.equalsIgnoreCase("true")) { // reset actuators before switching to auto
+    if (dataValue.equalsIgnoreCase("true")) { 
       autoMode = true;
       Serial.println("Mode set to AUTO");
-    } else if (dataValue.equalsIgnoreCase("false")) {
+    } else if (dataValue.equalsIgnoreCase("false")) { //reset actuators before switching to manual mode
       digitalWrite(PUMP, LOW);
       digitalWrite(VALVE_1, LOW);
       digitalWrite(VALVE_2, LOW);
@@ -109,7 +109,7 @@ void loop() {
 
   unsigned long currentMillis = millis();
   
-  if (currentMillis - lastTime >= 500) {
+  if (currentMillis - lastTime >= 1000) {
     
     // calculate time diffrence for consumption.
     unsigned long deltaTime = currentMillis - lastTime;
@@ -125,16 +125,17 @@ void loop() {
     //update consumption tracking using main flow sensor (sensor 1)
     updateConsumption(smoothedFlow1, deltaTime);
     
-    
-    int pir1 = digitalRead(PIR_SENSOR_1);
-    int pir2 = digitalRead(PIR_SENSOR_2);
+   
 
     if (autoMode){ //Automatic tank control and Check for leaks 
-      //fillTank(); 
+      fillTank(); 
       checkForLeak(smoothedFlow1, smoothedFlow2); 
     }
     
     // Send structured data to ESP8266
+     
+    //int pir1 = digitalRead(PIR_SENSOR_1);
+    //int pir2 = digitalRead(PIR_SENSOR_2);
     
 //    Serial.print("PIR1:");
 //    Serial.println(pir1 == HIGH ? "true" : "false");

@@ -17,7 +17,7 @@ unsigned long lastMonthReset = 0;
 const float DAILY_LIMIT = 500.0;     // 500L per day
 const float WEEKLY_LIMIT = 3000.0;   // 3000L per week
 const float MONTHLY_LIMIT = 12000.0; // 12000L per month
-const float MINUTE_LIMIT = 10.0;     // 10L per minute
+const float MINUTE_LIMIT = 0.75;     // 10L per minute
 
 // Alert flags
 bool dailyLimitAlert = false;
@@ -132,15 +132,23 @@ void sendConsumptionData() {
   Serial.println(minuteConsumption, 2);
   
   // Send alert flags
-  Serial.print("dailyLimitAlert:");
-  Serial.println(dailyLimitAlert ? "true" : "false");
+  if (dailyLimitAlert == "true") {
+    Serial.print("dailyLimitAlert:");
+    Serial.println("true");
+  }
+  if (weeklyLimitAlert == "true") {
+    Serial.print("weeklyLimitAlert:");
+    Serial.println("true");
+  } 
+  if (monthlyLimitAlert == "true") {
+    Serial.print("monthlyLimitAlert:");
+    Serial.println("true");
+  }
   
-  Serial.print("weeklyLimitAlert:");
-  Serial.println(weeklyLimitAlert ? "true" : "false");
-  
-  Serial.print("monthlyLimitAlert:");
-  Serial.println(monthlyLimitAlert ? "true" : "false");
-  
-  Serial.print("minuteLimitAlert:");
-  Serial.println(minuteLimitAlert ? "true" : "false");
+  if (minuteLimitAlert == "true") {
+    Serial.print("minuteLimitAlert:");
+    Serial.println("true");
+  }
+    
 }
+  

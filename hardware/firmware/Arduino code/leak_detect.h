@@ -5,8 +5,8 @@
 
 extern bool isLeakDetected; // Tracks current leak status
 
-#define FLOW_SENSOR_1 20
-#define FLOW_SENSOR_2 21
+#define FLOW_SENSOR_1 21
+#define FLOW_SENSOR_2 20
 
 #define PIR_SENSOR_1 24
 #define PIR_SENSOR_2 25
