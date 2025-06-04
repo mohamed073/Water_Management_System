@@ -16,20 +16,45 @@ These topics are used by the mobile app to send commands to the ESP8266 (MicroCo
 | Cado Valve      | Control secondary valve      | "true" / "false" | `home/tankRoom/cadoValve` | "**true**": means open the valve                             |
 | Automation Mode | Switch between manual & auto | "true" / "false" | `home/tankRoom/automode`  | "**true**": means make the system on Automatic Mode, User cannot send commands/ Control the system except switching to Manual Mode (**false**) |
 
+
+
+
+
 ---
 
 ## Published Topics (ESP8266 → Mobile)
 
 These topics are used by the ESP8266 to publish sensor data or system status updates to the mobile app.
 
-1. | Sensor / Module       | Purpose                           | Data Type        | Topic Path                        | Hint                                                         |
-   | --------------------- | --------------------------------- | ---------------- | --------------------------------- | ------------------------------------------------------------ |
-   | Tank Level Sensor     | Water level in the tank           | float number     | `home/tankRoom/tankLevel`         | the float number will be send as a *string* you will have to **parse it** first |
-   | Main Flow Rate Sensor | Flow rate of main water line      | float number     | `home/tankRoom/mainFlowrate`      | the float number will be send as a *string* you will have to **parse it** first |
-   | Secondary Flow Sensor | Flow rate of secondary line       | float number     | `home/tankRoom/secondFlowrate`    | the float number will be send as a *string* you will have to **parse it** first |
-   | PIR Sensor 1          | Motion detection - Zone 1         | "true" / "false" | `home/lekageRoom/firstPIRSensor`  | **true**: means there is a person                            |
-   | PIR Sensor 2          | Motion detection - Zone 2         | "true" / "false" | `home/lekageRoom/secondPIRSensor` | **true**: means there is a person                            |
-   | Leak Detection        | Alarm trigger if leakage detected | "true" / "false" | `home/leakageRoom/leakAlarm`      | **true**: means there is a leakage                           |
+1. | Sensor / Module       | Purpose                           | Data Type        | Topic Path                        | Hint                                        |
+   | --------------------- | --------------------------------- | ---------------- | --------------------------------- | ------------------------------------------- |
+   | Tank Level Sensor     | Water level in the tank           | float string     | `home/tankRoom/tankLevel`         | Send as string; must be **parsed** to float |
+   | Main Flow Rate Sensor | Flow rate of main water line      | float string     | `home/tankRoom/mainFlowrate`      | Send as string; must be **parsed** to float |
+   | Secondary Flow Sensor | Flow rate of secondary line       | float string     | `home/tankRoom/secondFlowrate`    | Send as string; must be **parsed** to float |
+   | PIR Sensor 1          | Motion detection - Zone 1         | "true" / "false" | `home/lekageRoom/firstPIRSensor`  | **true**: means there is a person           |
+   | PIR Sensor 2          | Motion detection - Zone 2         | "true" / "false" | `home/lekageRoom/secondPIRSensor` | **true**: means there is a person           |
+   | Leak Detection        | Alarm trigger if leakage detected | "true" / "false" | `home/leakageRoom/leakAlarm`      | **true**: means there is a leakage          |
 
 
+
+### The below Topic for  Water  Consumption Feature  
+
+#### Water Consumption Topics
+
+| Sensor / Module           | Purpose                | Data Type    | Topic Path                      | Hint                                        |
+| ------------------------- | ---------------------- | ------------ | ------------------------------- | ------------------------------------------- |
+| Total Water Consumption   | Cumulative water usage | float string | `home/waterConsumption/total`   | Send as string; must be **parsed** to float |
+| Daily Water Consumption   | Daily usage counter    | float string | `home/waterConsumption/daily`   | Send as string; must be **parsed** to float |
+| Weekly Water Consumption  | Weekly usage counter   | float string | `home/waterConsumption/weekly`  | Send as string; must be **parsed** to float |
+| Monthly Water Consumption | Monthly usage counter  | float string | `home/waterConsumption/monthly` | Send as string; must be **parsed** to float |
+| Minute Water Consumption  | Short-term usage rate  | float string | `home/waterConsumption/minute`  | Send as string; must be **parsed** to float |
+
+### Water Consumption Alert Topics
+
+| Sensor / Module     | Purpose                                | Data Type            | Topic Path                            | Hint                                                 |
+| ------------------- | -------------------------------------- | -------------------- | ------------------------------------- | ---------------------------------------------------- |
+| Daily Usage Alert   | Triggered if daily limit exceeded      | `"true"` / `"false"` | `home/waterConsumption/alert/daily`   | `"true"`: Usage has exceeded set threshold           |
+| Weekly Usage Alert  | Triggered if weekly limit exceeded     | `"true"` / `"false"` | `home/waterConsumption/alert/weekly`  | `"true"`: Usage has exceeded set threshold           |
+| Monthly Usage Alert | Triggered if monthly limit exceeded    | `"true"` / `"false"` | `home/waterConsumption/alert/monthly` | `"true"`: Usage has exceeded set threshold           |
+| Minute Usage Alert  | Triggered if sudden high flow detected | `"true"` / `"false"` | `home/waterConsumption/alert/minute`  | `"true"`: Possible leak or unusual activity detected |
 
