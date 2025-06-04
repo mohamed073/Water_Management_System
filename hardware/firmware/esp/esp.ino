@@ -26,6 +26,7 @@ const char* cadoValveTopic = "home/tankRoom/cadoValve";
 const char* automodeTopic = "home/tankRoom/automode"; // to decide manual or auto mode you work with 
 
  //esp publish on it.(Mobile receive)
+ 
 const char* tankLevelTankroomTopic = "home/tankRoom/tankLevel";
 const char* mainFlowrateTankroomTopic = "home/tankRoom/mainFlowrate";
 const char* secondFlowrateTankroomTopic = "home/tankRoom/secondFlowrate";
@@ -33,6 +34,19 @@ const char* firstPIRSensorTopic = "home/lekageRoom/firstPIRSensor";
 const char* secondPIRSensorTopic = "home/lekageRoom/secondPIRSensor";
 const char* pressureSensorTopic = "home/pressureValue";
 const char* leakTopic = "home/leakageRoom/leakAlarm";
+
+/* Topics for voulume consumption*/
+const char* totalConsumptionTopic = "home/waterConsumption/total";
+const char* dailyConsumptionTopic = "home/waterConsumption/daily";
+const char* weeklyConsumptionTopic = "home/waterConsumption/weekly";
+const char* monthlyConsumptionTopic = "home/waterConsumption/monthly";
+const char* minuteConsumptionTopic = "home/waterConsumption/minute";
+
+/* topic for consumption alert*/
+const char* dailyConsumptionAlertTopic = "home/waterConsumption/alert/daily";
+const char* weeklyConsumptionAlertTopic = "home/waterConsumption/alert/weekly";
+const char* monthlyConsumptionAlertTopic = "home/waterConsumption/alert/monthly";
+const char* minuteConsumptionAlertTopic = "home/waterConsumption/alert/minute";
 
 void setup_wifi() {
   delay(10);
@@ -150,6 +164,26 @@ void loop() {
             client.publish(pressureSensorTopic, dataValue.c_str());
         } else if (dataType == "leakDetected") {
             client.publish(leakTopic, dataValue.c_str());
+        } 
+        else if (dataType == "totalConsumption") {
+            client.publish(totalConsumptionTopic, dataValue.c_str());
+        }  else if (dataType == "dailyConsumption") {
+            client.publish(dailyConsumptionTopic, dataValue.c_str());
+        }  else if (dataType == "weeklyConsumption") {
+            client.publish(weeklyConsumptionTopic, dataValue.c_str());
+        }  else if (dataType == "monthlyConsumption") {
+            client.publish(monthlyConsumptionTopic, dataValue.c_str());
+        }  else if (dataType == "minuteConsumption") {
+            client.publish(minuteConsumptionTopic, dataValue.c_str());
+        }
+        else if (dataType == "dailyLimitAlert") {
+            client.publish(dailyConsumptionAlertTopic, dataValue.c_str());
+        }  else if (dataType == "weeklyLimitAlert") {
+            client.publish(weeklyConsumptionAlertTopic, dataValue.c_str());
+        }  else if (dataType == "monthlyLimitAlert") {
+            client.publish(monthlyConsumptionAlertTopic, dataValue.c_str());
+        }  else if (dataType == "minuteLimitAlert") {
+            client.publish(minuteConsumptionAlertTopic, dataValue.c_str());
         }  
         else {
             Serial.println("Unknown data type received!");

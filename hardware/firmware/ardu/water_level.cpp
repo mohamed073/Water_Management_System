@@ -104,7 +104,7 @@ void fillTank() {
 
 void sendWaterLevelData() {
   waterLevel = getWaterLevel();
-  Serial.print("waterLevel:");  
-  Serial.println(waterLevel);
+  Serial1.print("waterLevel:");  
+  Serial1.println(waterLevel);
 
 }

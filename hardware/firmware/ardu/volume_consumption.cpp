@@ -116,38 +116,38 @@ void checkLimits() {
 
 void sendConsumptionData() {
   // Send consumption data
-  Serial.print("totalConsumption:");
-  Serial.println(totalConsumption, 2);
+  Serial1.print("totalConsumption:");
+  Serial1.println(totalConsumption, 2);
   
-  Serial.print("dailyConsumption:");
-  Serial.println(dailyConsumption, 2);
+  Serial1.print("dailyConsumption:");
+  Serial1.println(dailyConsumption, 2);
   
-  Serial.print("weeklyConsumption:");
-  Serial.println(weeklyConsumption, 2);
+  Serial1.print("weeklyConsumption:");
+  Serial1.println(weeklyConsumption, 2);
   
   Serial.print("monthlyConsumption:");
-  Serial.println(monthlyConsumption, 2);
+  Serial1.println(monthlyConsumption, 2);
   
-  Serial.print("minuteConsumption:");
-  Serial.println(minuteConsumption, 2);
+  Serial1.print("minuteConsumption:");
+  Serial1.println(minuteConsumption, 2);
   
   // Send alert flags
   if (dailyLimitAlert == "true") {
-    Serial.print("dailyLimitAlert:");
-    Serial.println("true");
+    Serial1.print("dailyLimitAlert:");
+    Serial1.println("true");
   }
   if (weeklyLimitAlert == "true") {
-    Serial.print("weeklyLimitAlert:");
-    Serial.println("true");
+    Serial1.print("weeklyLimitAlert:");
+    Serial1.println("true");
   } 
   if (monthlyLimitAlert == "true") {
-    Serial.print("monthlyLimitAlert:");
-    Serial.println("true");
+    Serial1.print("monthlyLimitAlert:");
+    Serial1.println("true");
   }
   
   if (minuteLimitAlert == "true") {
-    Serial.print("minuteLimitAlert:");
-    Serial.println("true");
+    Serial1.print("minuteLimitAlert:");
+    Serial1.println("true");
   }
     
 }

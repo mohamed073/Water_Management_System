@@ -153,8 +153,8 @@ void loop() {
   }
 
   // Receiving data from ESP8266
-  if (Serial.available()) {
-    String receivedData = Serial.readStringUntil('\n');
+  if (Serial1.available()) {
+    String receivedData = Serial1.readStringUntil('\n');
     Serial.println("Received: " + receivedData);
     processReceivedData(receivedData);
   }

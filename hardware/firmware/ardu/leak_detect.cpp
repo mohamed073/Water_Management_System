@@ -91,11 +91,11 @@ void checkForLeak(float rate1, float rate2) {
 
 void sendLeakData() {
   
-  Serial.print("flowRate1:");
-  Serial.println(smoothedFlow1);
-  Serial.print("flowRate2:");
-  Serial.println(smoothedFlow2);
-  Serial.print("leakDetected:");
-  Serial.println(isLeakDetected ? "true" : "false");
+  Serial1.print("flowRate1:");
+  Serial1.println(smoothedFlow1);
+  Serial1.print("flowRate2:");
+  Serial1.println(smoothedFlow2);
+  Serial1.print("leakDetected:");
+  Serial1.println(isLeakDetected ? "true" : "false");
   
 }
