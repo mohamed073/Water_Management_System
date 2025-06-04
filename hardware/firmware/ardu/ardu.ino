@@ -10,7 +10,8 @@ bool autoMode = true; // Start in automatic mode
 void setup() {
   wdt_enable(WDTO_8S); // enable watch dog timer with 8 seconds
   
-  Serial.begin(9600);  // Use the default Serial for communication with ESP8266
+  Serial.begin(9600);  // Use the default Serial for communication with Termianl
+  Serial1.begin(9600);  // Use the default Serial1 for communication with ESP8266
 
   pinMode(FLOW_SENSOR_1, INPUT);
   pinMode(FLOW_SENSOR_2, INPUT);
