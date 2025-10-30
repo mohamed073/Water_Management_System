@@ -21,9 +21,9 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
 
-![System Architecture](images/system-architecture.png)
-![Hardware Prototype](images/hardware-prototype.jpg)
+![System Architecture](https://github.com/mohamed073/Water_Management_System/blob/main/images/Hardware%20Architecture%20for%20Smart%20Water%20Management%20System.png)
 
+*Figure 1: Complete Hardware Architecture of the Smart Water Management System*
 
 </div>
 
@@ -52,6 +52,48 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 - **System mode switching** (Auto/Manual)
 - **Real-time status feedback**
 - **Emergency override capability**
+
+## 🧠 Algorithm Architecture & Flow Diagrams
+
+### Real-time Leak Detection Algorithm
+
+<div align="center">
+  
+![Leak Detection Algorithm](https://github.com/mohamed073/Water_Management_System/blob/main/images/Leakage%20Detection%20Algorithm%20Flow%20Diagram.png)
+
+*Figure 2: Statistical Leak Detection Algorithm with Z-score Analysis and Multi-sensor Fusion*
+
+</div>
+
+### Water Consumption Analytics Pipeline
+
+<div align="center">
+
+![Consumption Analytics](https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Consumption%20Tracking%20Algorithm%20Flow%20Diagram.png)
+
+*Figure 3: Real-time Consumption Tracking with Multi-period Analytics*
+
+</div>
+
+### Manual Control & System Operation
+
+<div align="center">
+
+![Manual Control System](https://github.com/mohamed073/Water_Management_System/blob/main/images/Manual%20System%20Control%20Algorithm%20Flow%20Diagram.png)
+
+*Figure 4: Manual Override System with Command Processing and Status Feedback*
+
+</div>
+
+### Intelligent Tank Level Control System
+
+<div align="center">
+  
+![Tank Control Algorithm](https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Tank%20Level%20Detection%20Algorithm%20Flow%20Diagram.png)
+
+*Figure 5:  Tank Level Control with Automated Pump Management*
+
+</div>
 
 ## 🛠 Hardware Architecture
 
