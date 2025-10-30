@@ -335,7 +335,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Built with ❤️ using Arduino & IoT Technologies**
+**Built with ❤️ using Embedded System & IoT Technologies**
 
 *Real-time monitoring | Automated control | Water conservation*
 
