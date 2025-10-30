@@ -59,7 +59,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
   
-<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Leakage%20Detection%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Leak Detection Algorithm">
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Leakage%20Detection%20Algorithm%20Flow%20Diagram.png" alt="Leak Detection Algorithm">
 
 *Figure 2: Statistical Leak Detection Algorithm with Z-score Analysis and Multi-sensor Fusion*
 
@@ -69,7 +69,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
 
-<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Consumption%20Tracking%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Consumption Analytics">
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Consumption%20Tracking%20Algorithm%20Flow%20Diagram.png"  width="800" height="800" alt="Consumption Analytics">
 
 *Figure 3: Real-time Consumption Tracking with Multi-period Analytics*
 
@@ -79,7 +79,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
 
-<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Manual%20System%20Control%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Manual Control System">
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Manual%20System%20Control%20Algorithm%20Flow%20Diagram.png"  alt="Manual Control System">
 
 *Figure 4: Manual Override System with Command Processing and Status Feedback*
 
@@ -89,7 +89,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
   
-<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Tank%20Level%20Detection%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Tank Control Algorithm">
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Tank%20Level%20Detection%20Algorithm%20Flow%20Diagram.png"  alt="Tank Control Algorithm">
 
 *Figure 5: Tank Level Control with Automated Pump Management*
 
