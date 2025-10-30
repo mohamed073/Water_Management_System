@@ -1,20 +1,7 @@
 # 💧 Smart Water Management System
 
-<div align="center">
-
-![Embedded Architecture](https://img.shields.io/badge/Architecture-Enterprise_IoT-00979D?style=for-the-badge&logo=azure-iot&logoColor=white)
-![Real-time Processing](https://img.shields.io/badge/Processing-Real_Time_Analytics-4A4A55?style=for-the-badge&logo=clock&logoColor=white)
-![Industrial Protocols](https://img.shields.io/badge/Protocols-MQTT_Serial-00B0FF?style=for-the-badge&logo=network&logoColor=white)
-![Signal Intelligence](https://img.shields.io/badge/Analytics-Statistical_DSP-00C853?style=for-the-badge&logo=chart&logoColor=white)
-![System Reliability](https://img.shields.io/badge/Reliability-99.9%25_Uptime-FF6B00?style=for-the-badge&logo=shield-check&logoColor=white)
-![Deployment Scale](https://img.shields.io/badge/Scalable-Industrial_Grade-D32F2F?style=for-the-badge&logo=scale&logoColor=white)
-
-
 **An intelligent IoT-based embedded system for real-time water monitoring, leak detection, and automated control**
 
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
-
-</div>
 
 ## 🚀 Overview
 
