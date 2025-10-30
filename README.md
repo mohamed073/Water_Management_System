@@ -53,13 +53,13 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 - **Real-time status feedback**
 - **Emergency override capability**
 
-## 🧠 Algorithm Architecture & Flow Diagrams
+## 🧠 Algorithm Flow Diagrams
 
 ### Real-time Leak Detection Algorithm
 
 <div align="center">
   
-![Leak Detection Algorithm](https://github.com/mohamed073/Water_Management_System/blob/main/images/Leakage%20Detection%20Algorithm%20Flow%20Diagram.png)
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Leakage%20Detection%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Leak Detection Algorithm">
 
 *Figure 2: Statistical Leak Detection Algorithm with Z-score Analysis and Multi-sensor Fusion*
 
@@ -69,7 +69,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
 
-![Consumption Analytics](https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Consumption%20Tracking%20Algorithm%20Flow%20Diagram.png)
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Consumption%20Tracking%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Consumption Analytics">
 
 *Figure 3: Real-time Consumption Tracking with Multi-period Analytics*
 
@@ -79,7 +79,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
 
-![Manual Control System](https://github.com/mohamed073/Water_Management_System/blob/main/images/Manual%20System%20Control%20Algorithm%20Flow%20Diagram.png)
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Manual%20System%20Control%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Manual Control System">
 
 *Figure 4: Manual Override System with Command Processing and Status Feedback*
 
@@ -89,9 +89,9 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <div align="center">
   
-![Tank Control Algorithm](https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Tank%20Level%20Detection%20Algorithm%20Flow%20Diagram.png)
+<img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Tank%20Level%20Detection%20Algorithm%20Flow%20Diagram.png" width="600" height="400" alt="Tank Control Algorithm">
 
-*Figure 5:  Tank Level Control with Automated Pump Management*
+*Figure 5: Tank Level Control with Automated Pump Management*
 
 </div>
 
@@ -332,25 +332,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 </div>
 
-## 🎯 Quick Start Demo
-
-```cpp
-// Simple demo code
-void setup() {
-    initializeSensors();
-    connectWiFi();
-    startMonitoring();
-}
-
-void loop() {
-    checkForLeaks();
-    manageTankLevel();
-    updateConsumptionData();
-    delay(1000);
-}
-```
-
----
 
 <div align="center">
 
