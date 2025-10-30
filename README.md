@@ -2,15 +2,16 @@
 
 <div align="center">
 
-![Hardware Setup](https://img.shields.io/badge/Hardware-Arduino_Mega-00979D?style=for-the-badge&logo=arduino&logoColor=white)
-![Sensors](https://img.shields.io/badge/Sensors-IoT_Enabled-4A4A55?style=for-the-badge&logo=raspberry-pi&logoColor=white)
-![Real-time](https://img.shields.io/badge/Real--Time-Monitoring-00B0FF?style=for-the-badge&logo=clock&logoColor=white)
-![Leak Detection](https://img.shields.io/badge/Leak_Detection-95%25_Accuracy-00C853?style=for-the-badge&logo=shield-check&logoColor=white)
+![Embedded Architecture](https://img.shields.io/badge/Architecture-Enterprise_IoT-00979D?style=for-the-badge&logo=azure-iot&logoColor=white)
+![Real-time Processing](https://img.shields.io/badge/Processing-Real_Time_Analytics-4A4A55?style=for-the-badge&logo=clock&logoColor=white)
+![Industrial Protocols](https://img.shields.io/badge/Protocols-MQTT_Serial-00B0FF?style=for-the-badge&logo=network&logoColor=white)
+![Signal Intelligence](https://img.shields.io/badge/Analytics-Statistical_DSP-00C853?style=for-the-badge&logo=chart&logoColor=white)
+![System Reliability](https://img.shields.io/badge/Reliability-99.9%25_Uptime-FF6B00?style=for-the-badge&logo=shield-check&logoColor=white)
+![Deployment Scale](https://img.shields.io/badge/Scalable-Industrial_Grade-D32F2F?style=for-the-badge&logo=scale&logoColor=white)
+
 
 **An intelligent IoT-based embedded system for real-time water monitoring, leak detection, and automated control**
 
-[![GitHub issues](https://img.shields.io/github/issues/your-username/smart-water-management?color=red&style=flat-square)](https://github.com/your-username/smart-water-management/issues)
-[![GitHub stars](https://img.shields.io/github/stars/your-username/smart-water-management?color=yellow&style=flat-square)](https://github.com/your-username/smart-water-management/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 </div>
