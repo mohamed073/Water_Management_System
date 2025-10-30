@@ -298,16 +298,6 @@ void manageTankLevel() {
 
 We welcome hardware improvements and algorithm enhancements! 
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add some improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 <div align="center">
@@ -324,7 +314,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <div align="center">
 
 **Built with ❤️ using Embedded System & IoT Technologies**
-
-*Real-time monitoring | Automated control | Water conservation*
 
 </div>
