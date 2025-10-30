@@ -20,22 +20,10 @@
 The **Smart Water Management System** is a comprehensive embedded solution that leverages IoT technology to monitor, control, and optimize water usage in real-time. With advanced leak detection algorithms and automated control systems, it helps conserve water resources while providing seamless automation.
 
 <div align="center">
-  
-```mermaid
-graph TB
-    A[Sensors] --> B[Arduino Mega 2560]
-    B --> C[ESP8266 WiFi]
-    C --> D[Cloud Dashboard]
-    B --> E[Actuators]
-    E --> F[Valves & Pumps]
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-    style E fill:#ffebee
-    style F fill:#fce4ec
-```
+
+![System Architecture](images/system-architecture.png)
+![Hardware Prototype](images/hardware-prototype.jpg)
+
 
 </div>
 
