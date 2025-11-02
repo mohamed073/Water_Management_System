@@ -14,6 +14,12 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 *Figure 1: Complete Hardware Architecture of the Smart Water Management System*
 
 </div>
+<div align="center">
+
+![System Hardware](https://github.com/mohamed073/Water_Management_System/commit/86ffc13593479bab6bf53eb02feb05b0e7e0153c)
+*Figure 2:  Hardware Wiring*
+
+</div>
 
 ## ✨ Key Features
 
@@ -49,7 +55,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
   
 <img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Leakage%20Detection%20Algorithm%20Flow%20Diagram.png" alt="Leak Detection Algorithm">
 
-*Figure 2: Statistical Leak Detection Algorithm with Z-score Analysis and Multi-sensor Fusion*
+*Figure 3: Statistical Leak Detection Algorithm with Z-score Analysis and Multi-sensor Fusion*
 
 </div>
 
@@ -59,7 +65,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Consumption%20Tracking%20Algorithm%20Flow%20Diagram.png"  width="800" height="800" alt="Consumption Analytics">
 
-*Figure 3: Real-time Consumption Tracking with Multi-period Analytics*
+*Figure 4: Real-time Consumption Tracking with Multi-period Analytics*
 
 </div>
 
@@ -69,7 +75,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 <img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Manual%20System%20Control%20Algorithm%20Flow%20Diagram.png"  alt="Manual Control System">
 
-*Figure 4: Manual Override System with Command Processing and Status Feedback*
+*Figure 5: Manual Override System with Command Processing and Status Feedback*
 
 </div>
 
@@ -79,7 +85,7 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
   
 <img src="https://github.com/mohamed073/Water_Management_System/blob/main/images/Water%20Tank%20Level%20Detection%20Algorithm%20Flow%20Diagram.png"  alt="Tank Control Algorithm">
 
-*Figure 5: Tank Level Control with Automated Pump Management*
+*Figure 6: Tank Level Control with Automated Pump Management*
 
 </div>
 
