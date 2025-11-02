@@ -13,10 +13,11 @@ The **Smart Water Management System** is a comprehensive embedded solution that 
 
 *Figure 1: Complete Hardware Architecture of the Smart Water Management System*
 
+---
 </div>
 <div align="center">
 
-![System Hardware](https://github.com/mohamed073/Water_Management_System/commit/86ffc13593479bab6bf53eb02feb05b0e7e0153c)
+![System Hardware](https://github.com/mohamed073/Water_Management_System/blob/main/images/Hardware%20Wiring.png)
 *Figure 2:  Hardware Wiring*
 
 </div>
